@@ -1,12 +1,9 @@
 var express = require('express');
 var router = express.Router();
-let sum=0;
-let more=0;
-/* GET users listing. */
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  more = more+1;
-  sum =more+sum;
-  res.send("sum is" +more);
+  res.render('index', { title: 'Venkata Mallikharjuna Rao Pola' });
 });
 
 module.exports = router;
